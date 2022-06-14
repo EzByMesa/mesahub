@@ -3,4 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-createApp(App).use(store).use(router).mount('#app')
+import Bulma from 'bulma'
+
+const Vue = createApp(App)
+Vue.use(Bulma, router, store)
+Vue.mount('#app')

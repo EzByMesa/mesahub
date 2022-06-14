@@ -1,30 +1,66 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+<template class="main-view">
+  <Hero class="animated-swing-in-top-fwd"/>
+  <Content />
+  <Footer />
 </template>
 
+<script>
+import Hero from '@/components/Hero'
+import Content from '@/components/Content'
+import Footer from '@/components/Footer'
+
+export default {
+  components: {
+    Hero, Content, Footer
+  }
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  overflow: hidden !important;
 }
 
-nav {
-  padding: 30px;
+html, body {
+  width: 100%;
+  height: 100%;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  -webkit-animation: color-change-5x 8s linear infinite alternate both;
+    animation: color-change-5x 8s linear infinite alternate both;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
   }
 }
 </style>
