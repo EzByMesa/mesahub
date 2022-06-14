@@ -2,6 +2,12 @@
   <Hero class="animated-swing-in-top-fwd"/>
   <Content />
   <Footer />
+  <div class="video-wrapper">
+    <video playsinline autoplay muted loop>
+      <source src="@/assets/media/Mov2.mov">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </template>
 
 <script>
@@ -21,6 +27,27 @@ export default {
   overflow: hidden !important;
 }
 
+video {
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+}
+.video-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -29,38 +56,43 @@ html, body {
     animation: color-change-5x 8s linear infinite alternate both;
 }
 
+Hero, Footer {
+  z-index: 1000;
+}
+
+
 @-webkit-keyframes color-change-5x {
   0% {
-    background: #19dcea;
+    background: #AEA4C8;
   }
   25% {
-    background: #b22cff;
+    background: #D8ADC8;
   }
   50% {
-    background: #ea2222;
+    background: #9AB2BF;
   }
   75% {
-    background: #f5be10;
+    background: #FFF7CC;
   }
   100% {
-    background: #3bd80d;
+    background: #C9C3A0;
   }
 }
 @keyframes color-change-5x {
   0% {
-    background: #19dcea;
+    background: #AEA4C8;
   }
   25% {
-    background: #b22cff;
+    background: #D8ADC8;
   }
   50% {
-    background: #ea2222;
+    background: #9AB2BF;
   }
   75% {
-    background: #f5be10;
+    background: #FFF7CC;
   }
   100% {
-    background: #3bd80d;
+    background: #C9C3A0;
   }
 }
 </style>

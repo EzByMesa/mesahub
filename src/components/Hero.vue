@@ -27,7 +27,7 @@
           のこまぎばら
         </p>
         <p class="subtitle">
-          Нокомагивара ХАБ
+          Нокомагивара
         </p>
       </div>
     </div>
@@ -42,19 +42,30 @@ export default {
 </script>
 
 <style scoped>
-.delayed {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation-delay: 2s;
+@font-face {
+  font-family: 'Rus'; /*a name to be used later*/
+  src: url('../assets/fonts/NAMU/NAMU-Pro.ttf'); /*URL to font*/
 }
+
 .hero {
   position: sticky;
-  top:0;
-  padding:40px;
+  top: 0;
+  padding: 40px;
   text-align: center;
 
   -webkit-animation: bounce-in-top 1.1s both;
   animation: bounce-in-top 1.1s both;
+}
+
+.title, .subtitle {
+  font-size: 30px;
+  font-family: Rus,serif;
+}
+.title {
+  font-size: 40px;
+}
+.subtitle {
+  font-size: 18px;
 }
 
 .hero-body {

@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        &copy; <strong>Nokomagivara HUB</strong> by <router-link to="/">Meså</router-link>. The source code is licensed | 2022
+        &copy; <strong>Nokomagivara</strong> by <router-link to="/">Meså</router-link>. The source code is licensed | 2022
       </p>
     </div>
   </footer>
@@ -16,12 +16,19 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: 'Rus'; /*a name to be used later*/
+  src: url('../assets/fonts/NAMU/NAMU-Pro.ttf'); /*URL to font*/
+}
+
   .footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 40px;
     text-align: center;
+    font-family: Rus,serif;
+    padding: 10px;
+    mix-blend-mode: multiply;
 
     -webkit-animation: bounce-in-bottom 1.1s both;
     animation: bounce-in-bottom 1.1s both;
