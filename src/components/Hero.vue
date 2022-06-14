@@ -44,7 +44,7 @@ export default {
 <style scoped>
 @font-face {
   font-family: 'Rus'; /*a name to be used later*/
-  src: url('../assets/fonts/NAMU/NAMU-Pro.ttf'); /*URL to font*/
+  src: url('../assets/fonts/NAMU-Pro.ttf'); /*URL to font*/
 }
 
 .hero {

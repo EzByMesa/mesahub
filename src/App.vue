@@ -4,7 +4,7 @@
   <Footer />
   <div class="video-wrapper">
     <video playsinline autoplay muted loop>
-      <source src="@/assets/media/Mov2.mov">
+      <source src="https://cdn.videvo.net/videvo_files/video/free/2015-02/large_watermarked/Blurry_Trees_Seamless_Loop_01_Videvo_preview.mp4">
       Your browser does not support the video tag.
     </video>
   </div>
