@@ -26,10 +26,10 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <p class="title">
-          のこまぎわら
+          のこまぎわら アピウム
         </p>
         <p class="subtitle">
-          Нокомагивара
+          Нокомагивара APIUM
         </p>
       </div>
     </div>
@@ -69,8 +69,8 @@ export default {
 }
 .title {
   font-size: 40px;
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
   animation-delay: 1.3s;
 }
 .subtitle {

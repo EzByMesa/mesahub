@@ -65,15 +65,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 @font-face {
   font-family: 'Rus'; /*a name to be used later*/
   src: url('../assets/fonts/NAMU-Pro.ttf'); /*URL to font*/
 }
+
 .box {
-  text-align: right;
+  color: #FFF7CC;
+  background-color: rgba(0,0,0,0) !important;
+  box-shadow: none !important;
+  font-size: 20px;
+  text-align: center;
   font-family: Rus, serif;
-  background-color: #d5dbb9 !important;
+  font-weight: bolder;
 }
 
 image {
@@ -82,11 +87,30 @@ image {
 }
 .card {
   margin-bottom: 10px;
-  background-color: #FFF7CC !important;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.5) 87%);
+  transition: 0.5s;
+  .card-header-title {
+    color: #FFF7CC;
+  }
+  .card-header-icon {
+    color: #FFF7CC;
+  }
+}
+.card:hover {
+  margin-bottom: 10px;
+  background: rgb(255,197,126);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(235,213,100,0.5) 61%);
+  .card-header-title {
+    color: #FFF7CC;
+  }
+  .card-header-icon {
+    color: #FFF7CC;
+    font-weight: bolder;
+  }
 }
 .my-content {
   background: rgb(255,197,126);
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 2%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,0.3) 90%,rgba(0,0,0,0) 98%, rgba(0,0,0,0) 100%);
-  outline-offset: 10px;
 }
 </style>

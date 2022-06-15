@@ -25,7 +25,7 @@ export default {
 body {
   background-image: url(assets/media/bg.gif) !important;
   background-size: cover !important;
-  background-blend-mode: multiply !important;
+  background-blend-mode: luminosity !important;
   background-position: left, right !important;
   background-attachment: fixed, fixed !important;
 }
