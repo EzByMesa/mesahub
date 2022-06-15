@@ -1,23 +1,27 @@
 <template class="main-view">
   <Hero/>
-  <Content />
+  <!--<Content />-->
   <Footer />
 </template>
 
 <script>
 import Hero from '@/components/Hero'
-import Content from '@/components/Content'
+//import Content from '@/components/Content'
 import Footer from '@/components/Footer'
 //import Notification from '@/components/Notification'
 
 export default {
   components: {
-    Hero, Content, Footer, /*Notification*/
+    Hero, Footer
   }
 }
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
 *::-webkit-scrollbar {
   width: 0px;
 }
@@ -25,7 +29,7 @@ export default {
 body {
   background-image: url(assets/media/bg.gif) !important;
   background-size: cover !important;
-  background-blend-mode: luminosity !important;
+  background-blend-mode: multiply !important;
   background-position: left, right !important;
   background-attachment: fixed, fixed !important;
 }

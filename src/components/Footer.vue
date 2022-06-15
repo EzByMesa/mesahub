@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        &copy; 2022 <strong>Nokomagivara & APIUM</strong> by <router-link to="/">Meså</router-link>
+        &copy; 2022 <strong>APIUM.PRO</strong> by <router-link to="/">Meså</router-link>
       </p>
     </div>
   </footer>

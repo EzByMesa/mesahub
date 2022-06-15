@@ -1,8 +1,5 @@
 <template>
-  <div class="box is-hidden-desktop">
-
-  </div>
-  <section class="hero is-dark is-small is-hidden-touch">
+  <section class="hero is-dark is-small">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
       <nav class="navbar">
@@ -26,10 +23,10 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <p class="title">
-          のこまぎわら アピウム
+          APiUM PRO
         </p>
         <p class="subtitle">
-          Нокомагивара APIUM
+          のこまぎわら アピウム
         </p>
       </div>
     </div>
@@ -69,6 +66,7 @@ export default {
 }
 .title {
   font-size: 40px;
+  font-weight: bolder;
   -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
   animation-delay: 1.3s;
