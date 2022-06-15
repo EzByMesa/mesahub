@@ -1,19 +1,21 @@
 <template>
-  <section class="hero is-dark is-small">
+  <div class="box is-hidden-desktop">
+
+  </div>
+  <section class="hero is-dark is-small is-hidden-touch">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a class="navbar-item is-active my-btn">
                 RU
               </a>
-              <a class="navbar-item">
+              <a class="navbar-item menu-item my-btn">
                 EN
               </a>
-              <span class="navbar-item">
-            </span>
+              <span class="navbar-item"></span>
             </div>
           </div>
         </div>
@@ -24,7 +26,7 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <p class="title">
-          のこまぎばら
+          のこまぎわら
         </p>
         <p class="subtitle">
           Нокомагивара
@@ -49,28 +51,66 @@ export default {
 
 .hero {
   position: sticky;
+  background: linear-gradient(180deg, rgba(255,197,126,0.6) 0%, rgba(0,0,0,0) 100%) !important;
   top: 0;
   padding: 40px;
   text-align: center;
+  margin-bottom: 10px;
 
-  -webkit-animation: bounce-in-top 1.1s both;
-  animation: bounce-in-top 1.1s both;
+  -webkit-animation: bounce-in-top 2s both;
+  animation: bounce-in-top 2s both;
 }
 
 .title, .subtitle {
+  text-shadow: 0 0 4px #FFF7CC;
+  color: #9AB2BF;
   font-size: 30px;
   font-family: Rus,serif;
 }
 .title {
   font-size: 40px;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+  animation-delay: 1.3s;
 }
 .subtitle {
   font-size: 18px;
-}
-
-.hero-body {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+  animation-delay: 1.7s;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes text-focus-in {

@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        &copy; <strong>Nokomagivara</strong> by <router-link to="/">Meså</router-link>. The source code is licensed | 2022
+        &copy; 2022 <strong>Nokomagivara</strong> by <router-link to="/">Meså</router-link>
       </p>
     </div>
   </footer>
@@ -22,7 +22,7 @@ export default {
 }
 
   .footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     text-align: center;
@@ -32,6 +32,7 @@ export default {
 
     -webkit-animation: bounce-in-bottom 1.1s both;
     animation: bounce-in-bottom 1.1s both;
+    animation-delay: 3s;
   }
 
   @-webkit-keyframes bounce-in-bottom {

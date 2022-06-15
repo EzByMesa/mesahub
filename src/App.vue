@@ -1,51 +1,33 @@
 <template class="main-view">
-  <Hero class="animated-swing-in-top-fwd"/>
+  <Hero/>
   <Content />
   <Footer />
-  <div class="video-wrapper">
-    <video playsinline autoplay muted loop>
-      <source src="https://cdn.videvo.net/videvo_files/video/free/2015-02/large_watermarked/Blurry_Trees_Seamless_Loop_01_Videvo_preview.mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
 import Content from '@/components/Content'
 import Footer from '@/components/Footer'
+//import Notification from '@/components/Notification'
 
 export default {
   components: {
-    Hero, Content, Footer
+    Hero, Content, Footer, /*Notification*/
   }
 }
 </script>
 
 <style lang="scss">
-* {
-  overflow: hidden !important;
+*::-webkit-scrollbar {
+  width: 0px;
 }
 
-video {
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -100;
-}
-.video-wrapper {
-  width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: multiply;
+body {
+  background-image: url(assets/media/bg.gif) !important;
+  background-size: cover !important;
+  background-blend-mode: multiply !important;
+  background-position: left, right !important;
+  background-attachment: fixed, fixed !important;
 }
 
 html, body {
@@ -56,26 +38,42 @@ html, body {
     animation: color-change-5x 8s linear infinite alternate both;
 }
 
-Hero, Footer {
-  z-index: 1000;
+.my-btn {
+  margin-right: 5px;
+  color: #FFF7CC !important;
+  background-color: #ffffff00 !important;
+  border: none !important;
+  transition: 0.3s;
+}
+.my-btn:hover {
+  border-radius: 10px;
+  color: #FFF7CC !important;
+  border: none !important;
+  background-color: #15313a0f !important;
 }
 
+.is-active {
+  border-radius: 10px;
+  color: #FFF7CC !important;
+  background-color: #15313a0f !important;
+  transition: 0.3s;
+}
 
 @-webkit-keyframes color-change-5x {
   0% {
-    background: #AEA4C8;
+    background: #D8ADC8;
   }
   25% {
     background: #D8ADC8;
   }
   50% {
-    background: #9AB2BF;
+    background: #D8ADC8;
   }
   75% {
     background: #FFF7CC;
   }
   100% {
-    background: #C9C3A0;
+    background: #FFF7CC;
   }
 }
 @keyframes color-change-5x {
